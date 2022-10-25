@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/* configuração padrão*/
+:root{
+    --color-1:#000;
+    --color-2:#fff;
+    --color-3:#808080;
+    --color-4:#acacac;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    list-style: none;
+}
