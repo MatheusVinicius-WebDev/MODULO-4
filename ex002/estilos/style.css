@@ -10,13 +10,3 @@ html,body{
     width: 100vw;
     background-color: black;
 }
-body{
-   /* background: url('')
-    no-repeat top center;
-    background-size: cover;
-    background-attachment: fixed;*/
-}
-main{
-    height: 100vh;
-    position: relative;
-}
