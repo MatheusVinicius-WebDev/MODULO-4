@@ -12,9 +12,9 @@ html,body{
 }
 body{
    /* background: url('')
-    no-repeat top center;*/ 
-    /*background-size: cover;*/
-    /*background-attachment: fixed;*/
+    no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;*/
 }
 main{
     height: 100vh;
