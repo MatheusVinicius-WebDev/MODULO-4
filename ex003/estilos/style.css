@@ -30,6 +30,14 @@ li,a,i{
 a{
     
 }
+/* Formularios no Main*/
+
+.content-form{
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+}
 /*  Rodape Padrão*/
 footer{
     text-align: center;
