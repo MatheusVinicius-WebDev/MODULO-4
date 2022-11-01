@@ -34,9 +34,34 @@ a{
 
 .content-form{
     margin: 20px;
-    width: 200px;
+    width:min-content;
+    flex-wrap: wrap;
     height: 200px;
     border: 1px solid rgba(0, 0, 0, 0.11);
+}
+.content-form-2{
+    margin: 20px;
+    width: min-content;
+    height: min-content;
+}
+.content-form-3{
+    margin: 20px;
+    width: min-content;
+    height: min-content;
+}
+
+.submit{
+    margin: 10px;
+    text-align: center;
+}
+.submit>input{
+    font-size: 1.2rem;
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    border: transparent;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 /*  Rodape Padrão*/
 footer{

@@ -14,31 +14,110 @@
         <nav class="menu-box">
             <ul class="menu">
 
-                <li><i style="color:rgb(34, 34, 34) ;" class='bx bxs-home-alt-2 bx-sm' ></i><a href="#">Home</a></li>
+                <li>
+                    <a href="#">
+                        <i style="color:rgb(34, 34, 34) ;" class='bx bxs-home-alt-2 bx-sm' ></i>
+                    </a>
+                </li>
 
-                <li><i style="color:rgb(230, 222, 116) ;" class='bx bxs-folder bx-sm'></i><a href="#">Projetos</a></li>
+                <li>
+                    <a href="#">
+                        <i style="color:rgb(230, 222, 116) ;" class='bx bxs-folder bx-sm'></i>
+                    </a>
+                </li>
 
-                <li><i style="color:rgba(255, 153, 0, 0.966) ;" class='bx bxl-css3 bx-sm'></i><a href="#">CSS</a></li>
+                <li>
+                    <a href="#">
+                        <i style="color:rgba(255, 153, 0, 0.966) ;" class='bx bxl-css3 bx-sm'></i>
+                    </a>
+                </li>
 
-                <li><i style="color:rgb(16, 11, 255) ;" class='bx bxl-html5 bx-sm'></i><a href="#">HTML</a></li>
+                <li>
+                    <a href="#">
+                        <i style="color:rgb(16, 11, 255) ;" class='bx bxl-html5 bx-sm'></i>
+                    </a>
+                </li>
 
-                <li><i style="color:rgb(201, 201, 57) ;" class='bx bxl-javascript bx-sm'></i><a href="#">JavaScript</a></li>
+                <li>
+                    <a href="#">
+                        <i style="color:rgb(201, 201, 57) ;" class='bx bxl-javascript bx-sm'></i>
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
     <main id="container-box-main">
+        <h1>Formulario tipo 1</h1>
         <section class="content-form">
-            <form>
+            <form autocomplete="off">
                 <p>Nome: <input type="text" name="nome" id="nome"></p>
                 <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
                 <p><input type="submit" value="Enviar"></p>
             </form>
         </section>
-        <section class="content-form">
+        <h1>Formulario tipo 2</h1><br>
+        <h2>Usando Label e Enviando</h2>
+        <section class="content-form-2">
+            <form  action="cadastro.php" method="post" autocomplete="off">
+                <p>
+                    <!--Deve-se ligar a label ao ID definido no input
+                        (melhora nos buscadores do google)-->
+                    <label for="user">Usuario:</label>
+                            <!-- /\ -->              <!-- \/ -->
+                    <input type="text" name="usuario" id="user">
+                </p>
+                <p>
+                    <label for="senha">Senha:</label> 
 
+                    <input type="password" name="senha" id="senha">
+                </p>
+                <p>
+                    <label for="rsenha">Confirme senha:</label> 
+
+                    <input type="password" name="r-senha" id="rsenha">
+                </p>
+                <p>
+                    <label for="email">E-mail:</label>
+
+                    <input type="email" name="e-mail" id="email">
+                </p>
+                <p class="submit">
+                    <input type="submit" value="Cadastrar">
+                </p>
+            </form>
         </section>
-        <section class="content-form">
+        <h1>Formulario tipo 3</h1>
+        <!--
+            no input coloque :
+            required //defini que so envia formulario se campos forem preenchidos.
 
+            minlength ="4"//Limita numero minimo de caracteres.
+            
+            maxlength="12"//Limita numero maximo de caracteres.
+            
+            size="12"// define quantos caracteres o campo ira mostrar.
+            
+            placeholder="Text"//Mensagem dentro do campo a ser preenchido.
+            
+            autocomplete="username"//Para preencher campo de usuario sozinho.
+
+            autocomplete="current-password"//Preencher senha  atual automaticamente.
+
+            autocomplete="new-password"// Definir senha nova .
+            -->
+        <section class="content-form-3">
+            <form  action="list.txt" method="post" autocomplete="on">
+                <div class="login">
+                    <label for="user2">Usuario:</label>
+                    <input type="text" name="usuario" id="user2" required minlength="5" maxlength="15" size="12" placeholder="Digite seu Usuario" autocomplete="username">
+                </div>
+                <div class="password">
+                    <label for="pass">Senha:</label>
+                    <input type="password" name="senha" id="pass" required minlength="8" maxlength="12" size="12" placeholder="Digite sua Senha" autocomplete="current-password">
+                </div>
+                <input type="submit" value="Entrar">
+                <input type="reset" value="Limpar">
+            </form>
         </section>
     </main>
     <footer>
