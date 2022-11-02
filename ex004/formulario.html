@@ -5,19 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modulo 4</title>
+    <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
     <h1>Formularios</h1>
-    <section>
-        <h2>Elementos Number</h2>
-        <form action="msg.txt" method="get" autocomplete="on">
-            <div class="cadastro">
-                <label for="name">Nome</label>
-                <input type="text" name="nome" id="name" required maxlength="30" placeholder="Nome Completo" autocomplete="name">
-                <input type="submit" value="Enviar">
-            </div>
-            
-        </form>
-    </section>
+    <main class="container">
+        <section>
+            <h1></h1>
+            <form action="msg.txt" method="get" autocomplete="on">
+                <h2>Tipo  de texto</h2>
+                <div class="cadastro">
+                    <label for="name">Nome</label>
+                    <input type="text" name="nome" id="name" required maxlength="40"  size="40" placeholder="Nome Completo" autocomplete="name">
+        
+                </div>
+
+                <h2>Tipo  para numeros</h2>
+                <div class="cadastro">
+                    <label for="imedia">Média</label>
+                    <input type="number" name="media" id="imedia" min="0" max="10"  step="0.5"  required>
+                </div>
+
+                <h2>Tipo de data - mes/ano</h2>
+                <div class="cadastro">
+                    <label for="imes">Data</label>
+                    <input type="month" name="mes" id="imes" >
+                    <!-- Date e mais atualizado visualmente com dia mes e ano-->
+                </div>
+
+                <h2>Tipo de data - dd/mm/aaaa</h2>
+                <div class="cadastro">
+                    <label for="data">Data</label>
+                    <input type="date" name="data" id="data">
+                </div>
+                
+
+                <h2>Modelo de checkbox</h2>
+                <div class="cadastro">
+                    <input type="checkbox" name="autoconect" id="autoconect">
+                    <label for="autoconect">Remember</label>
+                </div>
+
+                <h2>Modelo de horas</h2>
+                <div class="cadastro">
+                    <label for="ihora">Horas</label>
+                    <input type="time" name="hora" id="ihora">
+                </div>
+                <div class="cadastro">
+                    <label for="iemail">e-mail:</label>
+                    <input type="email" name="email" id="iemail" required placeholder="ex.testando@testeando.com" maxlength="35" size="35" autocomplete="email">
+                </div>
+                <div class="cadastro">
+                    <label for="tel">Telefone:</label>
+                    <input type="tel" name="telefone" id="tel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </div>   
+            </form>
+        </section>  
+    </main>
 </body>
 </html>
