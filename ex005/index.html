@@ -19,37 +19,69 @@
         <section class="sec-01">
             <fieldset>
                 <legend id="top">Perfil</legend>
-                <form id="dados" method="get" autocomplete="off">
+                <form id="dados" method="post" autocomplete="off">
                     <div class="perfil">
                         <p><label for="nome">Nome Completo</label></p>
-                        <input type="text" name="nome" id="nome" autocomplete="off" size="40" maxlength="40" >
+                        <input type="text" name="nome" id="nome" autocomplete="name" size="40" maxlength="40" required>
                     </div>
                     <div class="perfil">
                         <p><label for="email">Email</label></p>
-                        <input type="text" name="email" id="email" autocomplete="off" placeholder="ex.preenchaaqui@dominio.com" size="40" maxlength="40">
+                        <input type="email" name="email" id="email" autocomplete="email" placeholder="ex.preenchaaqui@dominio.com" size="40" maxlength="40" required>
                     </div>
-                </form>   
-            <form method="get" autocomplete="off">
-                <fieldset>
+                    <div class="perfil">
+                        <div class="perfil">
+                            <p><label for="escola">Escolaridade</label></p>
+                            <select name="escola" id="escola" required >
+                                <option value="--Escolha--" selected>--Escolha--</option>
+                                <option value="ifundamental">Fundamental Incompleto</option>
+                                <option value="cfundamental">Fundamental Completo</option>
+                                <option value="imedio">Ensino Medio Incompleto</option>
+                                <option value="cmedio">Ensino Medio Completo</option>
+                                <option value="superior">Ensino Superior</option>
+                                <option value="tecnico">Curso Técnico</option>
+                                <option value="mestrado">Mestrado</option>
+                                <option value="doutorado">Doutorado</option>
+                                <option value="bacharel">Bacharelado</option>
+                            
+                            </select>
+                        </div>
+                        <div class="perfil">
+                            <p><label for="iprof">Profissão:</label></p>
+                            <input type="text" name="prof" id="iprof" list="lstprof" required>
+                            <datalist id="lstprof" >
+                                
+                                <option>Administrador</option>
+                                <option>Contador</option>
+                                <option>Editor de Video</option>
+                                <option>Desenvolvedor Web</option>
+                                <option>Programador</option>
+                                <option>Editor de Fotos</option>
+                                <option>Influencer</option>
+                                <option>Bancario</option>
+                                <option>Engenheiro</option>
+                            </datalist>
+                        </div>
+                    </div>
+                    <br><br>
                     <legend>Sexo</legend><br>
-                    <div class="sexo">
+                    <div class="sexo perfil">
                         <input type="radio" name="sexo" id="male" checked >
                         <label for="male">Masculino</label>
                     </div>
-                    <div class="sexo">
+                    <div class="sexo perfil">
                         <input type="radio" name="sexo" id="female">
                         <label for="female">Feminino</label>
                     </div>
-                    <div class="sexo">
+                    <div class="sexo perfil">
                         <input type="radio" name="sexo" id="other">
                         <label for="other">Outro</label>
                     </div>
-                </fieldset>
-            </form>           
-
-                   
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Cancelar">
+                </form>            
+              
+        </fieldset>
                 
-            </fieldset>
         </section>
         
     </main>

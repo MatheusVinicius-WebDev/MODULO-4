@@ -29,9 +29,9 @@ article{
     height: 200px;
     border-radius: 50%;
 }
-section{
+section.sec-01{
     display: block;
-    margin: 0 40px;
+    margin: 0 40px; 
 }
 fieldset{
     margin: 0 auto;
@@ -45,14 +45,14 @@ fieldset legend#top{
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.384);
 }
 section fieldset form .perfil{
-    margin: 20px;
+    margin: 10px 0;
 }
+
 section fieldset form#dados{
-    display: flex;
+    display: block;
+    margin: 10px;
 }
-.perfil .sexo{
-    
-}
+
 /*Rodape*/
 footer{
     background-color: black;
