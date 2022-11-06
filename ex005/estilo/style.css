@@ -1,0 +1,75 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: block;
+}
+/*cabeçalho/menu*/
+header{
+    display: block;
+}
+/*Conteudo Principal*/
+main{
+display: block;
+}
+article{
+    margin-top: 30px;
+    text-align: center;
+}
+.img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+section{
+    display: block;
+    margin: 0 40px;
+}
+fieldset{
+    margin: 0 auto;
+    margin-top: 50px;
+}
+fieldset legend#top{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgb(104, 103, 103);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.384);
+}
+section fieldset form .perfil{
+    margin: 20px;
+}
+section fieldset form#dados{
+    display: flex;
+}
+.perfil .sexo{
+    
+}
+/*Rodape*/
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.info-rodape{
+    display: block;
+    margin: 30px auto;
+    text-align: center;
+}
+/* links */
+a{
+    color: currentColor;
+}
