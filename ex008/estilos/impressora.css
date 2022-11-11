@@ -1,0 +1,30 @@
+@charset "utf-8";
+*{
+    margin: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    list-style: none;
+}
+
+menu{
+    display: none;
+}
+
+article{
+    width: 100%;
+}
+article::after{
+    content: 'Esse artigo foi impresso através do site www.cursoemvideo.com';
+}
+.anuncio{
+    display: none;
+}
+footer{
+    display: none;
+}
+main::after{
+    content: 'Todo conteudo dessa pagina foi tirado de video aulas do Gustavo Guanabara';
+}

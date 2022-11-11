@@ -1,0 +1,85 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+header{
+    background-color: rgba(0, 0, 0, 0.829);
+}
+header >h1 {
+    padding: 50px 0px;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+main{
+    margin-top: 50px;
+}
+menu{
+    top: 0;
+    left: 0;
+    padding: 10px 0px;
+    width: 100%;
+    text-align: center;
+}
+menu ul{
+}
+menu li{
+    border-radius: 20px;
+    background-color: rgba(83, 83, 83, 0.76);
+    color: white;
+    display: inline-block;
+    padding: 10px;
+}
+menu li a{
+    color: white;
+}
+article{
+    line-height: 1.5rem;
+    width: 600px;
+    display: block;
+    margin: auto;
+}
+article>h2{
+    text-align: center;
+    font-size: 1.3rem;
+}
+article >p{
+    text-indent:1.5rem;
+    text-align: justify;
+    margin: 20px 20px;
+}
+.anuncio{
+    text-align: center;
+    opacity: 0.5;
+    border-radius: 50px;
+}
+.link{
+    background-color: rgb(112, 111, 111);
+}
+.link a{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+.anuncio:hover{
+    opacity: 1;
+}
+article .anuncio img{
+    max-width: 100%;
+    border-radius: 50px;
+}
+footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+footer > div{
+    padding: 20px 0;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
