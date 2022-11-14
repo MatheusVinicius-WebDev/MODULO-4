@@ -5,11 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modulo 4</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="estilos/style.css" media="all">
     <link rel="stylesheet" href="estilos/retrato.css" media="screen and(orientation:portrait)">
     <link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation: landscape)">
 </head>
 <body>
+    <nav id="menu-bar">
+        <ul id="menu">
+            <li>
+                <a href="#">
+                    <i class='bx bxs-home-alt-2'></i>
+                    <p>Inicio</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-news'></i>
+                    <p>Noticias</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-spreadsheet'></i>
+                    <p>Sobre</p>
+                </a>
+            </li>
+            <li id="search-bar">
+                
+                <form method="get" autocomplete="off">
+                    <input type="text" name="search" id="search" placeholder="Pesquise aqui..." size="30" maxlength="60" autocomplete="off" >
+                    <label for="search" >
+                        <button>
+                            <i class='bx bx-search'></i>
+                        </button>
+                    </label>
+                </form>
+            </li>
+        </ul>
+    </nav>
     <h1> Mudando orientação do dispositivo</h1>
 </body>
 </html>

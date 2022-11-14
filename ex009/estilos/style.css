@@ -1,3 +1,58 @@
 @charset "utf-8";
 
 /* Configurações Gerais*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    /* Paleta de Cores*/
+    --Primaria:#000;
+    --Secundaria:#FFF;
+    --Cor-claro:#c6c6c6;
+    --Cor-medio:#8f8f8f;
+    --Cor-escuro:#525252;
+
+
+ /* Efeitos transition*/
+
+    --trans-2:all .2s;
+    --trans-3:all .3s;
+    --trans-4:all .4s;
+    --trans-5:all .5s;
+    --trans-6:all .6s;
+
+}
+
+html,body{
+    margin: 0 auto;
+}
+
+#menu-bar{
+    background-color: var(--Cor-escuro);
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#menu{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    align-items: center;
+}
+#menu li a{
+    color: var(--Cor-claro);
+    display:inline-flex;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
