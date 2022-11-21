@@ -8,6 +8,7 @@
 }
 html,body{
     background-color: whitesmoke;
+
 }
 
 header{
@@ -18,7 +19,7 @@ header >h1{
     padding: 10px;
     text-align: center;
 }
-span#burger{
+i#burger{
     display: block;
     text-align: center;
     cursor: pointer;
@@ -45,6 +46,7 @@ menu > ul > li > a {
     background-color: rgb(82, 82, 236);
     color: whitesmoke;
     border: 3px solid rgba(69, 69, 184, 0.103);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.603);
 }
 menu > ul > li > a:hover{
     background-color: #1f1ff5;

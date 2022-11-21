@@ -7,11 +7,12 @@
     <title>Modulo 4</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/media-query.css">
 </head>
-<body>
+<body onresize="changeSize()">
     <header>
         <h1>Meu Site</h1>
-        <span id="burger" class="material-icons" onclick="clickMenu()">menu</span>
+        <i id="burger" class="material-icons" onclick="clickMenu()">menu</i>
         <menu id="menuBar">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -38,12 +39,22 @@
         </article>
     </main>
     <script>
+
+        function changeSize(){
+            if(window.innerWidth >= 768){
+                menuBar.style.display = 'block'
+            }else {
+                menuBar.style.display = 'none'
+            }
+        }
+
         function clickMenu(){
             if(menuBar.style.display == 'block'){
                 menuBar.style.display = 'none'
             }else{
                 menuBar.style.display ='block'
             }
+            
         }
     </script>
 </body>
